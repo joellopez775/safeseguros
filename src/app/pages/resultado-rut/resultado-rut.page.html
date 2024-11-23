@@ -1,0 +1,21 @@
+<div class="resultado-container">
+  <div class="card-container">
+    <h3>Resultado de la Consulta</h3>
+    <p>RUT Consultado: <strong>{{ rut }}</strong></p>
+    <div class="informacion">
+      <p>Información simulada como si fuera un PDF:</p>
+      <div class="detalle">
+        <p><strong>Nombre:</strong> Juan Pérez</p>
+        <p><strong>RUT:</strong> {{ rut }}</p>
+        <p><strong>Dirección:</strong> Calle Falsa 123</p>
+        <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+      </div>
+    </div>
+    <div class="boton">
+      <button class="btn btn-primary" (click)="generarPDF()">Generar PDF</button>
+    </div>
+    <div class="botonVolver">
+      <button class="btn btn-primary" (click)="goBack()">Volver a Consultar</button>
+    </div> 
+
+  </div>

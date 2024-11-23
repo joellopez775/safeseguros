@@ -29,8 +29,13 @@ const routes: Routes = [
   },
   {
     path: 'consultarregistro',
-    loadChildren: () => import('./pages/consultarregistro/consultarregistro.module').then( m => m.ConsultarregistroPageModule)
+    loadChildren: () => import('./pages/consultarregistro/consultarregistro.module').then( m => m.ConsultarRegistroPageModule)
   },
+  {
+    path: 'resultado-rut',
+    loadChildren: () => import('./pages/resultado-rut/resultado-rut.module').then( m => m.ResultadoRutPageModule)
+  },
+    
 ];
 
 @NgModule({
